@@ -32,9 +32,12 @@ import 'onsenui/css/onsenui.css'
 import 'onsenui/css/onsen-css-components.css'
 import axios from 'axios'
 import Vue from 'vue'
-const VueOnsen = require('vue-onsenui')
+axios.defaults.headers.get['Content-Type'] = 'application/json;charset=utf-8';
+axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
 
+const VueOnsen = require('vue-onsenui')
 Vue.use(VueOnsen)
+
 export default Vue.extend({
   name: 'Quotation',
   data() {
