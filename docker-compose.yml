@@ -1,0 +1,9 @@
+version: '2'
+services:
+  nuxt.js:
+    container_name: vue.js
+    build:
+      context: ./meigen
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:8091:80
