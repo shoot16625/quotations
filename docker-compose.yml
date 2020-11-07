@@ -6,5 +6,5 @@ services:
       context: ./meigen
       dockerfile: Dockerfile
     ports:
-      - :8091:80
+      - 8091:80
     restart: always
