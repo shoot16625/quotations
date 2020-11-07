@@ -70,6 +70,7 @@ export default Vue.extend({
           timeout: 5000,
           // XML形式
           responseType: 'document',
+          withCredentials: true,
         })
         .then(function (response) {
           const resp = response.data
