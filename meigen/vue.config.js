@@ -5,6 +5,7 @@ module.exports = {
       '/api/': {
         target: 'https://meigen.doodlenote.net'
       }
-    }
+    },
+    disableHostCheck: true
   }
 }
