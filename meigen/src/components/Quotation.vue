@@ -69,7 +69,7 @@ export default Vue.extend({
 
       const self = this // axios内にthisが届かないため
       axios
-        .get(`https://meigen.doodlenote.net/api/?c=10`, {
+        .get(`/api/?c=10`, {
           timeout: 5000,
           // XML形式
           responseType: 'document',
