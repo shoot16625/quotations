@@ -32,8 +32,8 @@ import 'onsenui/css/onsenui.css'
 import 'onsenui/css/onsen-css-components.css'
 import axios from 'axios'
 import Vue from 'vue'
-axios.defaults.headers.get['Content-Type'] = 'application/json;charset=utf-8';
-axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
+// axios.defaults.headers.get['Content-Type'] = 'application/json;charset=utf-8';
+// axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
 
 const VueOnsen = require('vue-onsenui')
 Vue.use(VueOnsen)
@@ -73,7 +73,7 @@ export default Vue.extend({
           timeout: 5000,
           // XML形式
           responseType: 'document',
-          withCredentials: true,
+          // withCredentials: true,
         })
         .then(function (response) {
           const resp = response.data
